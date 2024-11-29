@@ -4,6 +4,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("simple/", views.simple, name="simple"),
-    path("dinamico/<str:name>", views.dinamico, name="dinamico")
+    path("herencia/", views.herencia, name="herencia"),
+    path("ejemplo/", views.ejemplo, name="ejemplo"),
+    path("otra/", views.otra, name="otra"),
+    path("", views.index, name="index")
 ]

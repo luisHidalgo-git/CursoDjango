@@ -1,9 +1,13 @@
 from django.shortcuts import render
 
-def simple(request):
-    return render(request, "simple.html", {})
+def herencia(request):
+    return render(request, "herencia.html", {})
 
-def dinamico(request, name):
-    categories = ["code", "design", "marketing"]
-    context = {"name" : name, "categories" : categories}
-    return render(request, "dinamico.html", context)
+def ejemplo(request):
+    return render(request, "ejemplo.html", {})
+
+def otra(request):
+    return render(request, "otra.html", {})
+
+def index(request):
+    return render(request, "index.html", {})
