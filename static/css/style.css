@@ -1,0 +1,111 @@
+:root {
+    --color-primary: #99C8FB;
+    --color-secondary: #19d37c;
+    --color-text: #707789;
+    --color-bg: #dedede;
+    --color-white: #ffffff;
+    --color-dark: #333333;
+    --font-family: 'Arial', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Cambiado a border-box para un mejor control del tamaño */
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: var(--color-primary);
+    padding: 0 20px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+}
+
+nav img {
+    height: 70%; /* Ajusta la altura de la imagen */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 20px 15px; /* Espaciado horizontal y vertical */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 24px; /* Tamaño de fuente más adecuado */
+    font-weight: bold; /* Cambiado a bold para mayor énfasis */
+    transition: color 0.3s ease; /* Transición suave para el hover */
+}
+
+nav ul li a:hover {
+    color: var(--color-secondary); /* Color secundario al pasar el mouse */
+}
+
+main {
+    background-color: var(--color-bg);
+    padding: 20px; /* Espaciado interno en el main */
+}
+
+footer {
+    width: 100%;
+    height: auto; /* Altura automática para contenido flexible */
+    background-color: var(--color-text);
+    padding: 20px; /* Espaciado interno en el footer */
+}
+
+footer img {
+    margin-bottom: 10px; /* Espaciado inferior para imágenes */
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex; /* Flexbox para alinear elementos en fila */
+    justify-content: center; /* Centra los elementos del footer */
+}
+
+footer ul li {
+    margin-right: 15px; /* Espacio entre los elementos del footer */
+}
+
+footer ul li a {
+    color: var(--color-bg);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+/* Estilos adicionales para mejorar la apariencia general */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-dark);
+}
+
+button {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darken(var(--color-secondary), 10%); /* Efecto hover en botones */
+}
